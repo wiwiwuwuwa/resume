@@ -1,0 +1,173 @@
+%-------------------------
+% Resume in Latex
+% Author : Vladimir Nesterov
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{CJKutf8}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{CJK*}{UTF8}{min}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape ウラジミール・ネステロフ} \\ \vspace{1pt}
+    \small 日本、東京 \\ \vspace{1pt}
+    +81 70 9110 8139 $|$ \href{mailto:wiwiwuwuwa@gmail.com}{wiwiwuwuwa@gmail.com} $|$ \href{https://linkedin.com/in/wiwiwuwuwa}{linkedin.com/in/wiwiwuwuwa} \\ \vspace{1pt}
+    \href{https://github.com/wiwiwuwuwa}{github.com/wiwiwuwuwa} $|$ \href{https://www.youtube.com/@wiwiwuwuwa}{youtube.com/@wiwiwuwuwa} $|$ \href{https://artstation.com/wiwiwuwuwa}{artstation.com/wiwiwuwuwa}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{概要}
+  \resumeSubHeadingListStart
+    \item {
+      AAAゲーム開発で5年の経験を持つC++ソフトウェアエンジニア。C++、C\#、TypeScript、およびシェーダー言語（CG/HLSL、ShaderLab）に精通。Unreal Engine、Unity3D、グラフィックスプログラミングに熟練しており、コンピュータサイエンスとゲームメカニクスの実装に強い背景を持つ。
+    }
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{経験}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Injustice 2 Mobile, C++ ソフトウェアエンジニア}{2019年5月 -- 2023年12月}
+      {Sperasoft (Warner Bros' NetherRealm Studioと共同開発)}{}
+      \resumeItemListStart
+        \resumeItem{ボスとの対戦やクラン戦を可能にする非同期マルチプレイヤー機能を含むクランシステムなど、主要なゲームメカニクスの開発と強化。ゲームパスやルートボックスなどのマネタイズ機能を作成し、ユーザーエンゲージメントを向上。}
+        \resumeItem{C++ゲームクライアントとTypeScript REST APIゲームサーバー間のシームレスな相互作用を設計し、通信とパフォーマンスを最適化。}
+        \resumeItem{デザイナーやアーティストと密に協力し、新しいゲームおよびインターフェース要素を設計および展開し、視覚的およびインタラクティブな面を向上。}
+        \resumeItem{ゲームシェーダーと低レベルのSlateフレームワークに特化。}
+        \resumeItem{JavaとObjective-Cを使用してネイティブAndroidおよびiOSコードを開発および統合し、新機能を導入し、多様なユーザーグループ向けにアクセシビリティを向上。}
+        \resumeItem{新しいチームメンバーの指導を支援し、プロジェクトタスクの指導および面接に参加。}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PERSONAL PROJECTS-----------
+\section{個人プロジェクト}
+  \resumeSubHeadingListStart
+    \resumeItemListStart
+        \resumeItem{C++とDirectX12でゲームエンジンを開発。}
+        \resumeItem{ソフトウェアラスタライザライブラリおよび小型仮想マシンをCで実装。}
+        \resumeItem{TypeScript、llama-cpp、SQLite、およびORM Sequelizeを使用してAI LLMチャットボットを作成。}
+        \resumeItem{Unityでカスタムスクリプタブルレンダーパイプラインおよびディファードレンダラーを実装。}
+        \resumeItem{カスタムPBRおよびスクリーンスペースレイトレーシングシェーダーを開発。}
+        \resumeItem{Unityでカスタムテレインシステムを作成。}
+        \resumeItem{コンピュートシェーダーを使用してクラウドシステムアセットを作成。}
+        \resumeItem{ラグドール物理学に取り組み、アクティブラグドールを実装し、レイキャストとホイール摩擦式を使用してカスタムカーフィジックスを開発。}
+        \resumeItem{Blenderを使用したローポリモデリングとアニメーションに従事。}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{教育}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ヴォルゴグラード州立大学}{ロシア、ヴォルゴグラード}
+      {コンピュータサイエンス学士}{2016年9月 -- 2020年6月}
+    \resumeSubheading
+      {東京育英日本語学校}{日本、東京}
+      {日本語学学生}{2023年7月 -- 現在}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{技術スキル}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{スキル}{: C++, C\#, C, TypeScript, DirectX 12, CG/HLSL, ShaderLab, 数学, アルゴリズム.} \\
+     \textbf{ツール}{: Unreal Engine, Unity3D, Perforce, Git, Blender, Visual Studio, Jira, TeamCity, Jenkins, RenderDoc.}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+
+\end{CJK*}
+\end{document}

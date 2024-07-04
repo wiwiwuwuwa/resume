@@ -1,0 +1,169 @@
+%-------------------------
+% Resume in Latex
+% Author : Vladimir Nesterov
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Vladimir Nesterov} \\ \vspace{1pt}
+    \small Japan, Tokyo \\ \vspace{1pt}
+    +81 70 9110 8139 $|$ \href{mailto:wiwiwuwuwa@gmail.com}{wiwiwuwuwa@gmail.com} $|$ \href{https://linkedin.com/in/wiwiwuwuwa}{linkedin.com/in/wiwiwuwuwa} \\ \vspace{1pt}
+    \href{https://github.com/wiwiwuwuwa}{github.com/wiwiwuwuwa} $|$ \href{https://www.youtube.com/@wiwiwuwuwa}{youtube.com/@wiwiwuwuwa} $|$ \href{https://artstation.com/wiwiwuwuwa}{artstation.com/wiwiwuwuwa}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+  \resumeSubHeadingListStart
+    \item {
+      C++ Software Engineer with five years of experience in AAA game development. Proficient in C++, C\#, TypeScript, and shader languages (CG/HLSL, ShaderLab). Experienced in Unreal Engine, Unity3D, and graphics programming, with a strong background in computer science and game mechanics implementation.
+    }
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Injustice 2 Mobile, C++ Software Engineer}{May 2019 -- December 2023}
+      {Sperasoft (Co-development with Warner Bros' NetherRealm Studio)}{}
+      \resumeItemListStart
+        \resumeItem{Developed and enhanced key game mechanics, including clan systems with asynchronous multiplayer features, enabling players to team up against bosses and compete in clan wars. Created monetization features like game passes and loot boxes, enhancing user engagement.}
+        \resumeItem{Engineered seamless interactions between the C++ game client and the TypeScript REST API game server, optimizing communication and performance.}
+        \resumeItem{Collaborated closely with designers and artists to design and deploy new game and interface elements, improving visual and interactive aspects.}
+        \resumeItem{Specialized in game shaders and the low-level Slate framework.}
+        \resumeItem{Developed and integrated native Android and iOS code using Java and Objective-C, introducing new features and improving accessibility for diverse user groups.}
+        \resumeItem{Assisted in mentoring new team members, guiding them through project tasks and participating in interviews.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PERSONAL PROJECTS-----------
+\section{Personal Projects}
+  \resumeSubHeadingListStart
+    \resumeItemListStart
+        \resumeItem{Developed a game engine in C++ and DirectX12.}
+        \resumeItem{Implemented a software rasterizer library and small virtual machines in C.}
+        \resumeItem{Created an AI LLM chat bot using TypeScript, llama-cpp, SQLite, and ORM Sequelize.}
+        \resumeItem{Implemented custom Scriptable Render Pipelines and a deferred renderer in Unity.}
+        \resumeItem{Developed custom PBR and screen space raytracing shaders.}
+        \resumeItem{Created a custom terrain system in Unity.}
+        \resumeItem{Created a cloud system asset using compute shaders.}
+        \resumeItem{Worked with ragdoll physics, implementing active ragdolls, and developed custom car physics using raycast and wheel friction formulas.}
+        \resumeItem{Engaged in low poly modeling and animation using Blender.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Volgograd State University}{Volgograd, Russia}
+      {Bachelor's in Computer Science}{Sep. 2016 -- Jun. 2020}
+    \resumeSubheading
+      {Tokyo Ikuei Japanese School}{Tokyo, Japan}
+      {Student of Japanese Language}{Jul. 2023 -- Present}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Skills}{: C++, C\#, C, TypeScript, DirectX 12, CG/HLSL, ShaderLab, Math, Algorithms.} \\
+     \textbf{Tools}{: Unreal Engine, Unity3D, Perforce, Git, Blender, Visual Studio, Jira, TeamCity, Jenkins, RenderDoc.}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
