@@ -67,6 +67,13 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeSubheadingSingle}[1]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}}
+      \textbf{#1} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -97,7 +104,7 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Vladimir Nesterov} \\ \vspace{1pt}
+    \textbf{\LARGE \scshape Vladimir Nesterov} \\ \vspace{1pt}
     \small Japan, Tokyo \\ \vspace{1pt}
     +81 70 9110 8139 $|$ \href{mailto:wiwiwuwuwa@gmail.com}{wiwiwuwuwa@gmail.com} $|$ \href{https://linkedin.com/in/wiwiwuwuwa}{linkedin.com/in/wiwiwuwuwa} \\ \vspace{1pt}
     \href{https://github.com/wiwiwuwuwa}{github.com/wiwiwuwuwa} $|$ \href{https://www.youtube.com/@wiwiwuwuwa}{youtube.com/@wiwiwuwuwa} $|$ \href{https://artstation.com/wiwiwuwuwa}{artstation.com/wiwiwuwuwa}
@@ -106,9 +113,7 @@
 %-----------SUMMARY-----------
 \section{Summary}
   \resumeSubHeadingListStart
-    \item {
-      C++ Software Engineer with five years of experience in AAA game development. Proficient in C++, C\#, TypeScript, and shader languages (CG/HLSL, ShaderLab). Experienced in Unreal Engine, Unity3D, and graphics programming, with a strong background in computer science and game mechanics implementation.
-    }
+    \resumeItem{C++ Software Engineer with 5 years in AAA game development. Skilled in C++, C\#, C, TypeScript, and shaders (CG/HLSL, ShaderLab). Proficient in Unreal Engine, Unity3D, graphics programming and 3D modelling in Blender.}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
@@ -129,20 +134,32 @@
 
   \resumeSubHeadingListEnd
 
-%-----------PERSONAL PROJECTS-----------
-\section{Personal Projects}
+%-----------ADDITIONAL EXPERIENCE-----------
+\section{Additional Experience}
   \resumeSubHeadingListStart
-    \resumeItemListStart
+    \resumeSubheadingSingle{C++, C}
+      \resumeItemListStart
         \resumeItem{Developed a game engine in C++ and DirectX12.}
         \resumeItem{Implemented a software rasterizer library and small virtual machines in C.}
+      \resumeItemListEnd
+      
+    \resumeSubheadingSingle{TypeScript}
+      \resumeItemListStart
         \resumeItem{Created an AI LLM chat bot using TypeScript, llama-cpp, SQLite, and ORM Sequelize.}
-        \resumeItem{Implemented custom Scriptable Render Pipelines and a deferred renderer in Unity.}
-        \resumeItem{Developed custom PBR and screen space raytracing shaders.}
-        \resumeItem{Created a custom terrain system in Unity.}
-        \resumeItem{Created a cloud system asset using compute shaders.}
+      \resumeItemListEnd
+      
+    \resumeSubheadingSingle{Unity}
+      \resumeItemListStart
+        \resumeItem{Implemented custom Scriptable Render Pipelines, a deferred renderer, custom PBR, and numerous shaders and post-processing effects.}
+        \resumeItem{Created a custom terrain system and a cloud system asset using compute shaders.}
         \resumeItem{Worked with ragdoll physics, implementing active ragdolls, and developed custom car physics using raycast and wheel friction formulas.}
+      \resumeItemListEnd
+      
+    \resumeSubheadingSingle{Blender}
+      \resumeItemListStart
         \resumeItem{Engaged in low poly modeling and animation using Blender.}
-    \resumeItemListEnd
+      \resumeItemListEnd
+      
   \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------

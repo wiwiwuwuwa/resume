@@ -68,6 +68,13 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeSubheadingSingle}[1]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}}
+      \textbf{#1} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -99,7 +106,7 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape ウラジミール・ネステロフ} \\ \vspace{1pt}
+    \textbf{\LARGE \scshape ウラジミール・ネステロフ} \\ \vspace{1pt}
     \small 日本、東京 \\ \vspace{1pt}
     +81 70 9110 8139 $|$ \href{mailto:wiwiwuwuwa@gmail.com}{wiwiwuwuwa@gmail.com} $|$ \href{https://linkedin.com/in/wiwiwuwuwa}{linkedin.com/in/wiwiwuwuwa} \\ \vspace{1pt}
     \href{https://github.com/wiwiwuwuwa}{github.com/wiwiwuwuwa} $|$ \href{https://www.youtube.com/@wiwiwuwuwa}{youtube.com/@wiwiwuwuwa} $|$ \href{https://artstation.com/wiwiwuwuwa}{artstation.com/wiwiwuwuwa}
@@ -108,9 +115,7 @@
 %-----------SUMMARY-----------
 \section{概要}
   \resumeSubHeadingListStart
-    \item {
-      AAAゲーム開発で5年の経験を持つC++ソフトウェアエンジニア。C++、C\#、TypeScript、およびシェーダー言語（CG/HLSL、ShaderLab）に精通。Unreal Engine、Unity3D、グラフィックスプログラミングに熟練しており、コンピュータサイエンスとゲームメカニクスの実装に強い背景を持つ。
-    }
+    \resumeItem{AAAゲーム開発で5年の経験を持つC++ソフトウェアエンジニア。C++、C\#、C、TypeScript、およびシェーダー言語（CG/HLSL、ShaderLab）に精通。Unreal Engine、Unity3D、グラフィックスプログラミング、およびBlenderでの3Dモデリングに熟練。}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
@@ -131,20 +136,32 @@
 
   \resumeSubHeadingListEnd
 
-%-----------PERSONAL PROJECTS-----------
-\section{個人プロジェクト}
+%-----------ADDITIONAL EXPERIENCE-----------
+\section{追加経験}
   \resumeSubHeadingListStart
-    \resumeItemListStart
+    \resumeSubheadingSingle{C++, C}
+      \resumeItemListStart
         \resumeItem{C++とDirectX12でゲームエンジンを開発。}
         \resumeItem{ソフトウェアラスタライザライブラリおよび小型仮想マシンをCで実装。}
+      \resumeItemListEnd
+      
+    \resumeSubheadingSingle{TypeScript}
+      \resumeItemListStart
         \resumeItem{TypeScript、llama-cpp、SQLite、およびORM Sequelizeを使用してAI LLMチャットボットを作成。}
-        \resumeItem{Unityでカスタムスクリプタブルレンダーパイプラインおよびディファードレンダラーを実装。}
-        \resumeItem{カスタムPBRおよびスクリーンスペースレイトレーシングシェーダーを開発。}
-        \resumeItem{Unityでカスタムテレインシステムを作成。}
-        \resumeItem{コンピュートシェーダーを使用してクラウドシステムアセットを作成。}
+      \resumeItemListEnd
+      
+    \resumeSubheadingSingle{Unity}
+      \resumeItemListStart
+        \resumeItem{カスタムスクリプタブルレンダーパイプライン、ディファードレンダラー、カスタムPBR、および多数のシェーダーとポストプロセシングエフェクトを実装。}
+        \resumeItem{コンピュートシェーダーを使用してカスタムテレインシステムおよびクラウドシステムアセットを作成。}
         \resumeItem{ラグドール物理学に取り組み、アクティブラグドールを実装し、レイキャストとホイール摩擦式を使用してカスタムカーフィジックスを開発。}
+      \resumeItemListEnd
+      
+    \resumeSubheadingSingle{Blender}
+      \resumeItemListStart
         \resumeItem{Blenderを使用したローポリモデリングとアニメーションに従事。}
-    \resumeItemListEnd
+      \resumeItemListEnd
+      
   \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------

@@ -6,7 +6,7 @@ Japan, Tokyo
 
 ## Summary
 
-C++ Software Engineer with five years of experience in AAA game development. Proficient in C++, C#, TypeScript, and shader languages (CG/HLSL, ShaderLab). Experienced in Unreal Engine, Unity3D, and graphics programming, with a strong background in computer science and game mechanics implementation.
+C++ Software Engineer with 5 years in AAA game development. Skilled in C++, C#, C, TypeScript, and shaders (CG/HLSL, ShaderLab). Proficient in Unreal Engine, Unity3D, graphics programming and 3D modelling in Blender.
 
 ## Experience
 
@@ -21,16 +21,21 @@ C++ Software Engineer with five years of experience in AAA game development. Pro
 - Developed and integrated native Android and iOS code using Java and Objective-C, introducing new features and improving accessibility for diverse user groups.
 - Assisted in mentoring new team members, guiding them through project tasks and participating in interviews.
 
-## Personal Projects
+## Additional Experience
 
+### C++, C
 - Developed a game engine in C++ and DirectX12.
 - Implemented a software rasterizer library and small virtual machines in C.
+
+### TypeScript
 - Created an AI LLM chat bot using TypeScript, llama-cpp, SQLite, and ORM Sequelize.
-- Implemented custom Scriptable Render Pipelines and a deferred renderer in Unity.
-- Developed custom PBR and screen space raytracing shaders.
-- Created a custom terrain system in Unity.
-- Created a cloud system asset using compute shaders.
+
+### Unity
+- Implemented custom Scriptable Render Pipelines, a deferred renderer, custom PBR, and numerous shaders and post-processing effects.
+- Created a custom terrain system and a cloud system asset using compute shaders.
 - Worked with ragdoll physics, implementing active ragdolls, and developed custom car physics using raycast and wheel friction formulas.
+
+### Blender
 - Engaged in low poly modeling and animation using Blender.
 
 ## Education
